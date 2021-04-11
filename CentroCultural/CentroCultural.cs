@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CentroCultural
 {
@@ -14,6 +15,31 @@ namespace CentroCultural
             this.obras = obras;
             this.artistas = art;
 
+        }
+
+
+        public List<String> nombresObrasNacionalidad(String nac)
+        {
+            List<String> nombres = new List<String> { };
+       
+            List<Artista> listaArtistas = artistas.artistasNac(nac);
+            foreach (Artista art in listaArtistas)
+            {
+                nombres.Add(art.Nombre());
+            }
+            return nombres;
+        }
+     
+        public List<String> nombresCuadrosGaleria(String Gal)
+        {
+            List<String> nombres = new List<String> { };
+
+            List<ObraDeArte> listacuadros = obras.todosLosCuadrosPrestados();
+            foreach (ObraDeArte obr in listacuadros)
+            {
+                nombres.Add(obr.Nombre());
+            }
+            return nombres;
         }
 
         public void Nombre(String nombre)
@@ -41,17 +67,11 @@ namespace CentroCultural
             return artistas;
         }
 
-        public String nombresObrasNacionalidad(String Nac)
-        {
-            return Nac;
-        }
+      
         public String nombreCuadrosGaleria(String Gal)
         {
             return Gal;
         }
-
-        //metodo nombresObrasNacionalidad
-        //metodo nombresCuadrosGaleria
 
     }
 }
