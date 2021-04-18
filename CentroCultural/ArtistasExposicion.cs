@@ -84,6 +84,20 @@ namespace CentroCultural
             return recuart;
         }
 
+        //Este metodo es el que cumple la funcion del metodo artistasNac pero con otra funcionalidad diferente al de la linea 103
+        public Artista recuperaNacionalidad(String Nac)
+        {
+
+            Artista recuart = null;
+            foreach (Artista art in ArtistasExp)
+            {
+                if (Nac.Equals(art.Nacionalidad()))
+                {
+                    recuart = art;
+                }
+            }
+            return recuart;
+        }
 
 
         public List<Artista> artistasNac(String Nac)

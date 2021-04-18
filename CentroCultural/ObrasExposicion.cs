@@ -10,9 +10,9 @@ namespace CentroCultural
         public ObraDeArte[] obras;
 
 
-        public ObrasExposicion(CentroCultural cul)
+        public ObrasExposicion()
         {
-            this.cul = cul;
+           
             this.obras =  new ObraDeArte[5];
         }
 
@@ -51,7 +51,7 @@ namespace CentroCultural
             Boolean existe = false;
             foreach (ObraDeArte obra in obras)
             {
-                if (obra.Equals(o))
+                if (obra == o)
                 {
                     existe = true;
                 }
@@ -92,7 +92,7 @@ namespace CentroCultural
             ObraDeArte obr = null;
             foreach (ObraDeArte obra in obras)
             {
-                if (codigo == obra.Codigo())
+                if ( obra.Codigo() == codigo)
                 {
                     obr = obra;
                     break;

@@ -4,13 +4,13 @@ using System.Text;
 
 namespace CentroCultural
 {
-    class ObraDeArte
+    abstract class  ObraDeArte
     {
-        private int codigo;
-        private String nombre;
-        private String nombreArtista;
-        private int anioCreacion;
-        private Fecha fechaIngreso;
+        protected int codigo;
+        protected String nombre;
+        protected String nombreArtista;
+        protected int anioCreacion;
+        protected Fecha fechaIngreso;
 
         public ObraDeArte(int codigo, String nombre, String nombreArtista, int anioCreacion, Fecha fechaIngreso)
         {
