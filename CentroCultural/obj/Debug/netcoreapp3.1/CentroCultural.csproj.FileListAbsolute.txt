@@ -1,0 +1,13 @@
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\bin\Debug\netcoreapp3.1\CentroCultural.exe
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\bin\Debug\netcoreapp3.1\CentroCultural.deps.json
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\bin\Debug\netcoreapp3.1\CentroCultural.runtimeconfig.json
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\bin\Debug\netcoreapp3.1\CentroCultural.runtimeconfig.dev.json
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\bin\Debug\netcoreapp3.1\CentroCultural.dll
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\bin\Debug\netcoreapp3.1\CentroCultural.pdb
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\obj\Debug\netcoreapp3.1\CentroCultural.csprojAssemblyReference.cache
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\obj\Debug\netcoreapp3.1\CentroCultural.AssemblyInfoInputs.cache
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\obj\Debug\netcoreapp3.1\CentroCultural.AssemblyInfo.cs
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\obj\Debug\netcoreapp3.1\CentroCultural.csproj.CoreCompileInputs.cache
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\obj\Debug\netcoreapp3.1\CentroCultural.dll
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\obj\Debug\netcoreapp3.1\CentroCultural.pdb
+C:\Users\lu_kp\source\repos\CentroCultural\CentroCultural\obj\Debug\netcoreapp3.1\CentroCultural.genruntimeconfig.cache
