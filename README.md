@@ -1,6 +1,11 @@
 # CentroCultural
-
-*El metodo artistasNac lo cambie por otro que se llama recuperarNacionalidad que cumple con lo de recuperar porque el otro metodo lo compila
-pero no busca nada
-*La clase ObrasExposicion la volvi abstract por lo tanto modifique las variables private a protected
-
+ Clases:
+	Obra de Arte la pase a abstract porque solo se usan sus metodos y constructor
+	Fecha: OK
+	Escultura: OK
+	Cuadro : OK
+	CuadroPrestado : OK
+	ArtistasExposicion: Se cambio un metodo por uno diferente que no es igual a lo pide el profe pero cumple la funcion Linea 88
+	Artistas: OK
+	Centro Cultural: Creo q funciona todo
+	ObrasExposicion: ultimos 3 metodos no funcionan y tira error
