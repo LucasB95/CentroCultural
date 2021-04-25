@@ -12,7 +12,7 @@ namespace CentroCultural
         {
             Fecha fart1 = new Fecha(1970, 11, 02); // creo la fecha de nacimiento para artista 1
             Fecha fart1fa = new Fecha(2001, 07, 15);  // creo la fecha de fallecimiento para artista 1
-            Artista art1 = new Artista("Juan", "Argentino", fart1, fart1fa); // creacion de artista 1
+            Artista art1 = new Artista("Juan", "Argentina", fart1, fart1fa); // creacion de artista 1
 
             Fecha fart2 = new Fecha(1962, 12, 22);       // creo la fecha de nacimiento para artista 2
             Fecha fart2fa = new Fecha(1999, 06, 17);   // creo la fecha de fallecimiento para artista 2
@@ -57,25 +57,25 @@ namespace CentroCultural
             oe1.existeObra(e1);
             oe1.existeObra(c1);
 
-           Console.WriteLine(oe1.estaLlena());
+           Console.WriteLine("El array de Obras Tiene cosas Almacenadas :" +oe1.estaLlena());
 
-           Console.WriteLine(oe1.hayObras());
+           Console.WriteLine("Hay obras Almacenadas :" +oe1.hayObras());
 
-            ///Console.WriteLine(oe1.recuperaObra(002)); tira error en el metodo diciendo q obras es null
+            Console.WriteLine(oe1.recuperaObra(002)); //tira error en el metodo diciendo q obras es null
 
-            //Console.WriteLine(oe1.obrasArtista("Juan")); tira error en el metodo diciendo q obras es null
+           Console.WriteLine(oe1.obrasArtista("Juan")); //tira error en el metodo diciendo q obras es null
 
-            //Console.WriteLine(oe1.todosLosCuadrosPrestados()); tira error en el metodo diciendo q obras es null
+           Console.WriteLine(oe1.todosLosCuadrosPrestados()); //tira no muestra los cuadros solo el nombre del array
 
 
 
             CentroCultural centro1 = new CentroCultural("Perseo", oe1, artexp1);
 
+
+
             
-
-
-
-
+            Console.WriteLine(centro1.nombresObrasNacionalidad("Argentina"));
+            //centro1.nombreCuadrosGaleria();
 
         }
 

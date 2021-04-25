@@ -24,9 +24,10 @@ namespace CentroCultural
             //obrass.Add(o);
 
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < obras.Length; i++)
             {
-                if (i == null)
+                obras[i] = null;
+                if (obras[i] == null)
                 {
                     obras[i] = o;
                         break;
@@ -92,10 +93,10 @@ namespace CentroCultural
             ObraDeArte obr = null;
             foreach (ObraDeArte obra in obras)
             {
-                if ( obra.Codigo() == codigo)
+                if (obra != null && obra.Codigo() == codigo)
                 {
                     obr = obra;
-                    break;
+                   
                 }
             }
             return obr;
@@ -106,7 +107,7 @@ namespace CentroCultural
             List<ObraDeArte> artnac = new List<ObraDeArte> { };
             foreach (ObraDeArte obra in obras)
             {
-                if (obra.NombreArtista().Equals(nom))
+                if (obra != null && obra.NombreArtista().Equals(nom))
                 {
                     artnac.Add(obra);
                 }
@@ -114,17 +115,25 @@ namespace CentroCultural
             return artnac;
         }
 
-        public List<ObraDeArte> todosLosCuadrosPrestados()
+     
+
+        public ObraDeArte[] todosLosCuadrosPrestados()
         {
-            List<ObraDeArte> obrasPrestadas = new List<ObraDeArte> { };
-            foreach (ObraDeArte obra in obras)
+            ObraDeArte[] obrasPrest;
+            int contador = obras.Length;
+            obrasPrest = new ObraDeArte[contador];
+            for(int i=0; i < obras.Length; i++)
             {
-                if(obra is CuadroPrestado)
+                if(obras[i] != null && obras[i] is CuadroPrestado)
                 {
-                    obrasPrestadas.Add(obra);
+                    obrasPrest[i] = obras[i];
                 }
+               
             }
-            return obrasPrestadas;
+
+
+            return obrasPrest;
+
 
         }
 

@@ -30,17 +30,18 @@ namespace CentroCultural
             return nombres;
         }
      
-        public List<String> nombresCuadrosGaleria(String Gal)
-        {
-            List<String> nombres = new List<String> { };
+        //public List<String> nombresCuadrosGaleria(String Gal)
+        //{
+        //    List<String> nombres = new List<String> { };
 
-            List<ObraDeArte> listacuadros = obras.todosLosCuadrosPrestados();
-            foreach (ObraDeArte obr in listacuadros)
-            {
-                nombres.Add(obr.Nombre());
-            }
-            return nombres;
-        }
+        //    List<ObraDeArte> listacuadros;
+
+        //    foreach (ObraDeArte obr in listacuadros)
+        //    {
+        //        nombres.Add(obr.Nombre());
+        //    }
+        //    return nombres;
+        //}
 
         public void Nombre(String nombre)
         {
